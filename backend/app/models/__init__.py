@@ -1,0 +1,67 @@
+from backend.app.database import Base
+from backend.app.models.user_and_query import (
+    AppUser,
+    LegalQuery,
+    AiResponse,
+    NextStep,
+    ResponseSource,
+    LegalAidResource,
+    ResourceReferral,
+)
+from backend.app.models.jurisdiction_and_knowledge import (
+    Jurisdiction,
+    UserJurisdiction,
+    LegalSource,
+    SourceVersion,
+    LegalProvision,
+    KnowledgeArticle,
+    ArticleSource,
+)
+from backend.app.models.document_and_privacy import (
+    Document,
+    DocumentVersion,
+    DocumentPassage,
+    PrivacyReview,
+    SensitiveFinding,
+    RedactionAction,
+    ProcessingConsent,
+    DocumentAnalysis,
+    DocumentComparison,
+)
+from backend.app.models.analysis_results import (
+    ClauseExplanation,
+    PotentialConcern,
+    DocumentDeadline,
+    AnalysisSource,
+)
+
+__all__ = [
+    "Base",
+    "AppUser",
+    "LegalQuery",
+    "AiResponse",
+    "NextStep",
+    "ResponseSource",
+    "LegalAidResource",
+    "ResourceReferral",
+    "Jurisdiction",
+    "UserJurisdiction",
+    "LegalSource",
+    "SourceVersion",
+    "LegalProvision",
+    "KnowledgeArticle",
+    "ArticleSource",
+    "Document",
+    "DocumentVersion",
+    "DocumentPassage",
+    "PrivacyReview",
+    "SensitiveFinding",
+    "RedactionAction",
+    "ProcessingConsent",
+    "DocumentAnalysis",
+    "DocumentComparison",
+    "ClauseExplanation",
+    "PotentialConcern",
+    "DocumentDeadline",
+    "AnalysisSource",
+]

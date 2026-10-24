@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-page: #FAF9F5;
+    --text-primary: #24352F;
+    --text-secondary: #64716B;
+    --border-color: #E1E6E2;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    color: #203D35;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom interactive styles */
+.badge-redacted {
+  background-color: #DDEBE5;
+  color: #203D35;
+  border: 1px solid #C5DDD3;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* Subtle focus indicators */
+*:focus-visible {
+  outline: 2px solid #203D35;
+  outline-offset: 2px;
+}
