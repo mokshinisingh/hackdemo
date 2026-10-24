@@ -1,0 +1,22 @@
+{
+  "name": "nyayamitra-legal-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NyayaMitra - India Legal Rights Awareness Assistant & Privacy-First Document Simplifier",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "install:frontend": "npm --prefix frontend install",
+    "backend": "PYTHONPATH=. backend/venv/bin/uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload",
+    "test:backend": "PYTHONPATH=. backend/venv/bin/pytest backend/tests -v"
+  },
+  "keywords": [
+    "legal-tech",
+    "privacy",
+    "redaction",
+    "india-law",
+    "hacktoberfest"
+  ],
+  "author": "NyayaMitra Team",
+  "license": "Apache-2.0"
+}
